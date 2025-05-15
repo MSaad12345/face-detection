@@ -1,0 +1,63 @@
+ body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #1e1e2f;
+      color: white;
+    }
+    h1 {
+      text-align: center;
+      padding: 1rem;
+      background-color: #2d2d44;
+      margin: 0;
+    }
+    #main {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 1rem;
+    }
+    #video-container, #info-container {
+      margin: 1rem;
+    }
+    #video-container {
+      position: relative;
+    }
+    #video {
+      border-radius: 10px;
+      width: 640px;
+      height: 480px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    }
+    #overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      cursor: pointer;
+    }
+    #status {
+      margin-top: 1rem;
+    }
+    #controls {
+      text-align: center;
+      margin: 1rem;
+    }
+    button {
+      padding: 0.5rem 1rem;
+      margin: 0.5rem;
+      background-color: #5a5af0;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:disabled {
+      background-color: #888;
+      cursor: not-allowed;
+    }
+    #objectResults {
+      white-space: pre-line;
+      margin-top: 1rem;
+      font-size: 0.95rem;
+      max-height: 450px;
+      overflow-y: auto;
+    }
